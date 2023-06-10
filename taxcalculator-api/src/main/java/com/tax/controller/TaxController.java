@@ -25,11 +25,8 @@ public class TaxController {
 	
 	@PostMapping("/austria")
 	public ResponseEntity<Object> calculate(@RequestBody VAT vat) {
-		//VAT vat = new VAT();
-		//return new ResponseEntity<String>("Hello World", responseHeaders, HttpStatus.CREATED);
+
 		return service.calculateTax(vat);
-		
-		//return new ResponseEntity<VATRecord>(vat, HttpStatus.OK);
 	}
 
 }
